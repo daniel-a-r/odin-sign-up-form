@@ -8,11 +8,62 @@
 </head>
 <body>
   <div class="container">
-    <div class="sidebar"></div>
+    <div class="sidebar">
+      <img class="sidebar-bg-img" src="./assets/halie-west-25xggax4bSA-unsplash.jpg">
+      <div class="sidebar-logo">
+        <img class="sidebar-logo-img" src="./assets/odin-lined.png">
+        <p>ODIN</p>
+      </div>
+    </div>
     <div class="main">
-      <div class="header"></div>
-      <div class="form"></div>
-      <div class="footer"></div>
+      <div class="header">
+        <p class="heading-text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+        <p class="heading-text">Sign up to <em>now</em> to get started.</p>
+        <p class="heading-text">You <em>know</em> you want to</p>
+      </div>
+      <div class="form-container">
+        <form action="#" method="post">
+          <div class="form-input-card">
+            <p class="heading-text">Let's do this!</p>
+            <div class="form-input">
+              <div class="form-row">
+                <div>
+                  <label for="user_first_name">FIRST NAME</label>
+                  <input type="text" id="user_first_name">
+                </div>
+                <div>
+                  <label for="user_last_name">LAST NAME</label>
+                  <input type="text" id="user_last_name">
+                </div>
+              </div>
+              <div class="form-row">
+                <div>
+                  <label for="user_email">EMAIL</label>
+                  <input type="email" id="user_email">
+                </div>
+                <div>
+                  <label for="user_phone_number">PHONE NUMBER</label>
+                  <input type="tel" id="user_phone_number">
+                </div>
+              </div>
+              <div class="form-row">
+                <div>
+                  <label for="user_password">PASSWORD</label>
+                  <input type="password" id="user_password">
+                </div>
+                <div>
+                  <label for="user_password_confirm">CONFIRM PASSWORD</label>
+                  <input type="password" id="user_password_confirm">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-submit">
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </body>

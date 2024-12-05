@@ -1,15 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+  font-family: "Norse-Bold";
+  src: url(./assets/Norse-Bold.otf);
+}
+
+:root {
+  --main-padding: 2rem;
+}
+
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
-  font-family: sans-serif;
-  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
   margin: 0 auto;
   height: 100vh;
-  width: 70%;
-  border: 1px solid red;
+  width: max(50%, 1300px);
+  display: flex;
+}
+
+.sidebar {
+  flex: 0 1 40%;
+  position: relative;
+}
+
+.sidebar-bg-img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.sidebar-logo {
+  width: 100%;
+  padding: 0.75rem 0;
+  color: white;
+  background-color: rgba(8, 8, 8, 0.50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 22%;
+  z-index: 2;
+  
+}
+
+.sidebar-logo p {
+  display: inline;
+  font-family: 'Norse-Bold';
+  font-size: 5.5rem;
+  margin: 0;
+  width: fit-content;
+}
+
+.sidebar-logo-img {
+  height: 7rem;
+  aspect-ratio: auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #f9fafb;
+}
+
+.header {
+  /* border: 2px solid green; */
+  padding: var(--main-padding);
+  padding-bottom: 3rem;
+  display: flex;
+  flex: 0 1 36%;
+  flex-direction: column;
+  justify-content: end;
+  
+}
+
+.heading-text {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.header p {
+  width: 90%;
+}
+
+.header p:nth-last-child(1) {
+  margin-top: 2rem;
+}
+
+.form-container {
+  /* border: 2px solid rebeccapurple; */
+  flex: 1;
+}
+
+form {
+  /* border: 2px solid red; */
+  /* padding: var(--main-padding); */
+}
+
+.form-input-card {
+  /* border: 2px solid pink; */
+  padding: var(--main-padding);
+  background-color: #fff;
+  box-shadow: 0 1px 10px -5px rgb(48, 48, 48);
+}
+
+.form-row {
+  display: flex;
+}
+
+label {
+  display: block;
+}
+
+.form-submit {
+  /* border: 2px solid blue; */
+  padding: var(--main-padding);
 }
