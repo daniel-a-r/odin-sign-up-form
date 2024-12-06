@@ -51,6 +51,7 @@ body {
   font-size: 0.9rem;
 }
 
+.photo-credit a:link,
 .photo-credit a:visited {
   color: white;
 }
